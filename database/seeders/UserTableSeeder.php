@@ -3,10 +3,10 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class UserTableSeeder extends Seeder
 {
@@ -18,10 +18,10 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name' => 'Админ_Ali',
+            'name' => 'Админ Shop',
             'is_admin' => 1,
             'email' => 'shopfull@example.com',
-            'password' => Hash::make('shopping'),
+            'password' => Hash::make('password'),
         ]);
     }
 }
